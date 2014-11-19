@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- 活动列表入口（广告） -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/id_item_bg"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/bell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/id_bell" />
+
+        <TextView
+            android:id="@+id/ii_purchase_activity_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="5dip"
+            android:text="@string/is_ssq_default_notice"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ii_lottery_category"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView 
+            android:id="@+id/ii_category_fc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="@string/is_category_fc"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+        <TextView 
+            android:id="@+id/ii_category_tc"
+        	  android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="@string/is_category_tc"
+              android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+         <TextView 
+            android:id="@+id/ii_category_gpc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_horizontal"
+            android:text="@string/is_category_gpc"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            />
+        
+    </LinearLayout>
+    
+    <ImageView 
+        android:id="@+id/ii_category_selector"
+        android:src="@drawable/id_category_selector"
+        android:scaleType="matrix"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <!-- 彩票列表 -->
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/ii_viewpager"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    />
+
+</LinearLayout>

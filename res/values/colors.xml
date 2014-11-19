@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="black">#ff000000</color>
+    <color name="red">#ffff0000</color>
+    <color name="red2">#ffb20000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="back">#ff840101</color>
+    <color name="paleyellow">#ffb8d300</color>
+    <color name="snow">#fffffafa</color>
+    <color name="seashell">#fffff5ee</color>
+    <color name="invest">#ffc9cbcc</color>
+    <color name="investhui">#ffe1e2e5</color>
+    <color name="yellow">#ffffff99</color>
+    <color name="gray">#ffe5e5e5</color>
+    <color name="gray1">#ff8b8b8b</color>
+    <color name="orange">#fffffec2</color>
+    <color name="orange1">#ffdfc274</color>
+    <color name="orange2">#ffdfc276</color>
+    <color name="orange3">#fffc8b01</color>
+    <color name="yellowy">#ffffff00</color>
+    <color name="grayy">#ff6b716b</color>
+    <color name="greensfc">#ff44d500</color>
+    <color name="greend">#ff247f00</color>
+    <color name="logoback">#ff750000</color>
+    <color name="grayt">#fff7f3f7</color>
+    <color name="loginback">#ffd9d9d9</color>
+    <color name="purple">#ff470000</color>
+    <color name="red_slight">#CD2626</color>
+	<color name="black_slight">#212121</color>
+	<color name="green">#30690B</color>
+</resources>

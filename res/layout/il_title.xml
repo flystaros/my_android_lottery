@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+    <!-- common container -->
+    <RelativeLayout 
+        android:id="@+id/ii_common_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/id_title_bg"
+        android:visibility="gone"
+        >
+        <ImageView 
+            android:id="@+id/ii_title_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/id_title_goback"
+            />
+        <TextView 
+            android:id="@+id/ii_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            />
+        <ImageView 
+            android:id="@+id/ii_title_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/id_title_help"
+            />
+    </RelativeLayout>
+    
+    <!-- 未登录标题 -->
+    <RelativeLayout 
+        android:id="@+id/ii_unlogin_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/id_title_bg"
+        android:visibility="gone"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/id_logo"
+            />
+        <ImageView 
+            android:id="@+id/ii_title_regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/id_purchase_regist"
+            />
+        <ImageView 
+            android:id="@+id/ii_title_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/ii_title_regist"
+            android:background="@drawable/id_purchase_login"
+            />
+        
+    </RelativeLayout>
+
+    <!--已经登陆 -->
+    <RelativeLayout 
+        android:id="@+id/ii_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/id_title_bg"
+        android:visibility="gone"
+        >
+        <ImageView 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_marginLeft="10dp"
+			android:src="@drawable/id_cmc_logo"
+            />
+        <ImageButton 
+            android:id="@+id/ii_purchase_system_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/id_purchase_system_info"
+            />
+        <TextView 
+            android:id="@+id/ii_top_user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/ii_purchase_system_info"
+            android:text="@string/is_user_loginned_test"
+            />
+        
+    </RelativeLayout>
+    
+</LinearLayout>

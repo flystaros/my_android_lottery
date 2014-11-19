@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 添加操作 -->
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="8dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/ii_add_optional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/id_lottery_add_optional_num" />
+
+        <Button
+            android:id="@+id/ii_add_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/id_lottery_add_random_num" />
+    </LinearLayout>
+
+    <!-- 清空 -->
+    
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dip"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/ii_shopping_list_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/id_lotter_shopping_clear" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/ii_shopping_lottery_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ii_lottery_shopping_initiate_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id_lottery_shopping_initiate_buy"
+                android:enabled="false" />
+
+            <Button
+                android:id="@+id/ii_lottery_shopping_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/id_lottery_shopping_buy" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- 购物车展示 -->
+    
+    <ListView
+        android:id="@+id/ii_shopping_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/top"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@android:color/white"
+        android:dividerHeight="3dip" />
+    
+    
+
+</RelativeLayout>

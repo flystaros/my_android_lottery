@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 底部导航 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true" >
+
+    <!-- 购彩通用导航 -->
+
+    <LinearLayout
+        android:id="@+id/ii_bottom_common"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/ii_bottom_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:background="@drawable/id_buttom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/id_lottery_home" />
+
+        <ImageButton
+            android:id="@+id/ii_bottom_lottery_hall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/id_buttom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/id_lottery_hall" />
+
+        <ImageButton
+            android:id="@+id/ii_bottom_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/id_buttom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/id_lottery_recharge" />
+
+        <ImageButton
+            android:id="@+id/ii_bottom_lottery_myself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/id_buttom_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:src="@drawable/id_lottery_myself" />
+    </LinearLayout>
+
+    <!-- 购彩 -->
+
+    <LinearLayout
+        android:id="@+id/ii_bottom_game"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/id_buttom_menu_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <ImageButton
+            android:id="@+id/ii_bottom_game_choose_clean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/id_clear_choose" />
+
+        <TextView
+            android:id="@+id/ii_bottom_game_choose_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/is_ssq_default_notice"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/ii_bottom_game_choose_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/id_choose_ok" />
+    </LinearLayout>
+</RelativeLayout>

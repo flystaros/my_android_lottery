@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 手机摇啊摇 -->
+
+    <LinearLayout
+         android:id="@+id/ii_lottery_buy_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/id_lottery_phone_shake_bg"
+        android:gravity="center_horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/id_lottery_phone_shake" />
+    </LinearLayout>
+
+    <!-- 双色球选号 -->
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/ii_lottery_buy_bottom"
+         >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 红球的选号 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id_ssq_red_title" >
+
+                <Button
+                    android:id="@+id/ii_ssq_random_red"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/is_random_red" />
+            </RelativeLayout>
+            <!-- 红球选号的容器 -->
+            <!-- 高度固定：留出一个空行——小屏幕手机 -->
+
+            <GridView
+                android:id="@+id/ii_ssq_red_number_container"
+                
+                android:layout_width="fill_parent"
+                
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                
+                android:listSelector="@android:color/white"
+                
+                android:layout_height="200dip"
+                android:numColumns="auto_fit" 
+                
+                android:columnWidth="35dip"
+                >
+            </GridView>
+
+            <!-- 蓝球的选号 -->
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/id_ssq_blue_title" >
+
+                <Button
+                    android:id="@+id/ii_ssq_random_blue"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dip"
+                    android:text="@string/is_random_blue" />
+            </RelativeLayout>
+            <!-- 蓝球选号 -->
+
+            <GridView
+                android:id="@+id/ii_ssq_blue_number_container"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:layout_marginTop="5dip"
+                android:columnWidth="35dip"
+                android:listSelector="@android:color/white"
+                android:numColumns="auto_fit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

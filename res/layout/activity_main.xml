@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+     
+  <!-- 标题３个 -->
+  <include  
+      android:id="@+id/ii_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      layout="@layout/il_title"/>
+
+
+        <!-- 底部导航 2个 -->
+  <include
+      android:id="@+id/ii_bottom"  
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      layout="@layout/il_bottom"
+      />
+      
+    
+  <!-- 中间的部分 -->
+  
+  <RelativeLayout 
+      android:id="@+id/ii_middle"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_below="@id/ii_title"
+      android:layout_above="@id/ii_bottom"
+      android:background="@color/white"
+      >
+  </RelativeLayout>
+
+  
+</RelativeLayout>

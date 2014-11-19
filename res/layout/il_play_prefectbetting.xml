@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/ii_lottery_multiple_recovery_period"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/id_item_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ii_shopping_list_betting_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/is_shopping_list_betting_num"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/ii_shopping_list_betting_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/is_shopping_list_betting_money"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="倍数:"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/left"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ii_sub_appnumbers"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_subtraction" />
+
+                <TextView
+                    android:id="@+id/ii_appnumbers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_textview_bg"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingLeft="5sp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/ii_add_appnumbers"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_add" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:text="(1-99倍)"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <TextView
+                android:id="@+id/left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:text="追期:"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/left"
+                android:layout_weight="1.0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/ii_sub_issueflagNum"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_subtraction" />
+
+                <TextView
+                    android:id="@+id/ii_issueflagNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_textview_bg"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingLeft="5sp"
+                    android:singleLine="true" />
+
+                <Button
+                    android:id="@+id/ii_add_issueflagNum"
+                    style="@android:style/Widget.Button.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:background="@drawable/id_add" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:text="(1-99期)"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="10dip"
+            android:text="中奖后停止追号"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/ii_lottery_purchase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:adjustViewBounds="true"
+            android:padding="0dip"
+            android:src="@drawable/id_purchase" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ii_lottery_shopping_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ii_lottery_multiple_recovery_period"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:cacheColorHint="@android:color/white"
+        android:divider="@android:color/white" >
+    </ListView>
+
+</RelativeLayout>

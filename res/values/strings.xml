@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Lottery!</string>
+    <string name="app_name">Lottery</string>
+    <string name="is_exit">退出</string>
+    <string name="is_positive">确定</string>
+    <string name="is_negative">取消</string>
+    <string name="is_loading">加载中……</string>
+    <string name="is_lottery_money_limit">单注投注额不得大于20000元</string>
+    <string name="action_settings">单注投注额不得大于20000元</string>
+
+    <!-- 购彩大厅 -->
+    <string name="is_user_loginning">登陆中请等候……</string>
+    <string name="is_user_loginned_test">您好：132632***** \n余额：100.00元</string>
+    <string name="is_user_loginned_notice" formatted="false">您好：T% \n余额：M%元</string>
+    <string name="is_user_loginned" formatted="false">您好：N% \n余额：M%元</string>
+    <string name="is_ssq_default_notice">双色球加奖了，两亿元大派送！</string>
+    <string name="is_hall_common_summary">第ISSUE期 还有TIME停售</string>
+    <string name="is_hall_summary_default">数据加载中……</string>
+    <string name="is_hall_ssq_title">两元获500万 每周二 四 六开奖</string>
+    <string name="is_hall_ssq_pool">奖池M%元</string>
+    <string name="is_hall_3d_title">10选3中1000元 每天20:30开奖</string>
+    <string name="is_hall_qlc_title">百万奖期期开 每周一 三 五开奖</string>
+    <string name="is_category_fc">福彩</string>
+    <string name="is_category_tc">体彩</string>
+    <string name="is_category_gpc">高频彩</string>
+
+    <!-- 双色球 -->
+
+    <string name="is_ssq_title_default">双色球选号</string>
+    <string name="is_ssq_title">双色球第ISSUE期</string>
+    <string name="is_ssq">双色球</string>
+    <string name="is_random_red">机选红球</string>
+    <string name="is_random_blue">机选篮球</string>
+
+    <!-- 选号 -->
+
+    <string name="is_need_to_chose">您还需要选择NUM个</string>
+    <string name="is_ball_red">红球</string>
+    <string name="is_ball_blue">蓝球</string>
+    <string name="is_play_bottom_title">   共 NUM  注   MONEY  元   </string>
+    <string name="is_shopping_list_title" formatted="false">N% I%期</string>
+    <string name="is_shopping_list_notice" formatted="false"><![CDATA[注数：&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注&#160;&#160;金额：&#160;&#160;<font color="#ff0000">MONEY</font>元]]></string>
+    <string name="is_shopping_list_betting_num" formatted="false"><![CDATA[注数：&#160;&#160;<font color="#ff0000">NUM</font>&#160;&#160;注]]></string>
+    <string name="is_shopping_list_betting_money" formatted="false"><![CDATA[金额：&#160;&#160;<font color="#ff0000">MONEY1</font>元&#160;&#160;余额：&#160;&#160;<font color="#ff0000">MONEY2</font>元]]></string>
+
+    <!-- 登录 -->
+    <string name="is_login">登 录</string>
+    <string name="is_login_notice1">温馨提示：彩民村网站用户可以直接登录</string>
+    <string name="is_login_notice11">温馨提示：彩民村网站用户可以直接</string>
+    <string name="is_login_notice2"><u>登录</u></string>
+    <string name="is_forget_password_notice">您遗忘登录密码时可登录彩民村网站（www.caimincun.com）找回，或致电彩民村客服热线索回密码！</string>
+    <string name="is_username">用户名:</string>
+    <string name="is_regist_password">密     码:</string>
+    <string name="is_auto_login">自动登录</string>
+
+</resources>

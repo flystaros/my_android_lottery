@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+
+    <classpathentry
+        kind="con"
+        path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK" />
+
+    <classpathentry
+        exported="true"
+        kind="con"
+        path="com.android.ide.eclipse.adt.LIBRARIES" />
+
+    <classpathentry
+        exported="true"
+        kind="con"
+        path="com.android.ide.eclipse.adt.DEPENDENCIES" />
+
+    <classpathentry
+        kind="src"
+        path="src" />
+
+    <classpathentry
+        kind="src"
+        path="gen" />
+
+    <classpathentry
+        kind="lib"
+        path="libs/commons-lang3-3.0-beta.jar"
+        sourcepath="/home/flystar/Videos/北京资料/手机彩票和红孩子/01/video/手机中彩网/常用jar包/commons-lang3-3.1-src.zip" />
+
+    <classpathentry
+        kind="lib"
+        path="libs/commons-codec.jar" />
+
+    <classpathentry
+        kind="output"
+        path="bin/classes" />
+
+</classpath>
